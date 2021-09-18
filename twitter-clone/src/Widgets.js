@@ -9,7 +9,7 @@ function Widgets() {
         <Search className="widgets__searchIcon" />
         <input placeholder="Search Twitter" type="text" />
       </div>
-      <div className="widgets__widgetContainter">
+      <div className="widgets__widgetContainer">
           <h2>What's Happening</h2>
           <TwitterTweetEmbed tweetId={"1439241500152385539"}/>
           <TwitterTimelineEmbed sourceType="profile" screenName="linkedinselling" options={{height:400}}/>
