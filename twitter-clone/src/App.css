@@ -1,4 +1,14 @@
-body{
-    --twitter-color:#50b7f5;
-    --twitter-background:#e6ecf0;
+body {
+  --twitter-color: #50b7f5;
+  --twitter-background: #e6ecf0;
+}
+.app {
+  display: flex;
+  height: 100vh; /*this will use the entire height of screen. the sidebar border was not stretched but by adding this it completely stretched*/
+  max-width: 1300px; /*created the box with height as full screen and width as 1300 now we need to center it*/
+  /* border: 1px solid red; */
+  /*this wil center 1300 width*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px; /*top-botton  , left -right*/
 }
