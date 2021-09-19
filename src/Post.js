@@ -12,24 +12,24 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://pbs.twimg.com/profile_images/1393954096776761344/XXUnwfUF_400x400.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Akash K{" "}
+             {displayName}{" "}
               <span className="post__headerUserName">
-                <VerifiedUserIcon className="post__badge" />
-                @aakashkumbhare
+                {verified &&  <VerifiedUserIcon className="post__badge" />}
+                @{username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>I challenge the twitter clone</p>
+            <p>{text}</p>
           </div>
           <img
-            src="https://media.giphy.com/media/LpisZdXM3yOFuYnv07/giphy.gif?cid=ecf05e47c92e54ead80f345e8c5c467d89df72dab8bedef0&rid=giphy.gif&ct=g"
+            src={image}
             alt=""
           />
           <div className="post__footer">
