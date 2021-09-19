@@ -14,7 +14,7 @@ function TweetBox() {
       displayName: "akash",
       username: "akash404",
       image: tweetImage,
-      avatar: "avatar",
+      avatar: "https://pbs.twimg.com/profile_images/1393954096776761344/XXUnwfUF_400x400.jpg",
       verified: true,
       text: tweetMessage,
     };
